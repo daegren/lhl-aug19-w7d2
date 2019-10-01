@@ -1,24 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import PhotoList from "./components/PhotoList";
+
+const dummyData = [
+  {
+    albumId: 1,
+    id: 1,
+    title: "accusamus beatae ad facilis cum similique qui sunt",
+    url: "https://via.placeholder.com/600/92c952",
+    thumbnailUrl: "https://via.placeholder.com/150/92c952"
+  },
+  {
+    albumId: 1,
+    id: 2,
+    title: "reprehenderit est deserunt velit ipsam",
+    url: "https://via.placeholder.com/600/771796",
+    thumbnailUrl: "https://via.placeholder.com/150/771796"
+  },
+  {
+    albumId: 1,
+    id: 3,
+    title: "officia porro iure quia iusto qui ipsa ut modi",
+    url: "https://via.placeholder.com/600/24f355",
+    thumbnailUrl: "https://via.placeholder.com/150/24f355"
+  },
+  {
+    albumId: 1,
+    id: 4,
+    title: "culpa odio esse rerum omnis laboriosam voluptate repudiandae",
+    url: "https://via.placeholder.com/600/d32776",
+    thumbnailUrl: "https://via.placeholder.com/150/d32776"
+  }
+];
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Web API Demo</h1>
+      <PhotoList photos={dummyData} />
     </div>
   );
 }
