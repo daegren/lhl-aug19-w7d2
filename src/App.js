@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import PhotoList from "./components/PhotoList";
 import FromNow from "./components/FromNow";
+import MouseTracker from "./components/MouseTracker";
 
 const App = () => {
   const [photos, setPhotos] = useState([]);
@@ -20,8 +21,11 @@ const App = () => {
       {/* <PhotoList photos={photos} /> */}
 
       {/* Part 2 */}
-      <FromNow date={date} />
-      <button onClick={() => setDate(new Date())}>Reset Date</button>
+      {/* <FromNow date={date} />
+      <button onClick={() => setDate(new Date())}>Reset Date</button> */}
+
+      {/* Part 3 */}
+      <MouseTracker />
     </div>
   );
 };
